@@ -23,14 +23,14 @@ or
 yarn add react-wheel-time-picker
 ```
 
-## Usage
-
 ### d.ts declaration
 
 If you have an vite-env.d.ts or other d.ts file in your src folder you can put this
 >`'declare module 'react-wheel-time-picker'`
 >
 It's for finding corresponding type of 'react-wheel-time-picker'.
+
+## Usage
 
 ### 24 hours format (light & dark)
 
