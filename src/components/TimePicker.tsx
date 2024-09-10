@@ -3,6 +3,7 @@ import { useState } from "react";
 import "../styles/react-wheel-time-picker.css";
 import TimePickerSelection from "./TimePickerSelection";
 import TimePickerWrapper from "./TimePickerWrapper";
+import { TimePickerProps } from "./TimePicker.type";
 
 function TimePicker({
   value: initialValue = "",
@@ -29,32 +30,7 @@ function TimePicker({
   inputClassName = null,
   isDarkMode,
   label,
-}: {
-  value: string | null;
-  cellHeight?: number;
-  placeHolder?: string;
-  pickerDefaultValue?: string;
-  onChange: (timeValue: string) => void;
-  onFocus?: () => void;
-  onSave?: (finalSelectedValue: string | undefined) => void;
-  onCancel?: () => void;
-  disabled?: boolean;
-  isOpen?: boolean;
-  required?: boolean;
-  cancelButtonText?: string;
-  saveButtonText?: string;
-  controllers?: boolean;
-  seperator?: boolean;
-  id?: string | null;
-  use12Hours?: boolean;
-  onAmPmChange?: (value: string) => void;
-  name?: string | null;
-  onOpen?: () => void;
-  popupClassName?: string | null;
-  inputClassName?: string | null;
-  isDarkMode?: boolean;
-  label?: string;
-}) {
+}: TimePickerProps) {
   const [isOpen, setIsOpen] = useState(initialIsOpenValue);
   const [height] = useState(cellHeight);
   const [inputValue, setInputValue] = useState(initialValue);
