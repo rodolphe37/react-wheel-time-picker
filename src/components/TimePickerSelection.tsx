@@ -104,10 +104,10 @@ function TimePickerSelection({
   };
 
   return (
-    <div className="react-ios-time-picker  react-ios-time-picker-transition">
+    <div className="react-wheel-time-picker  react-wheel-time-picker-transition">
       {controllers && (
         <div
-          className="react-ios-time-picker-btn-container"
+          className="react-wheel-time-picker-btn-container"
           style={
             isDarkMode ? { background: "#000" } : { backgroundColor: "#d6d6d6" }
           }
@@ -117,7 +117,7 @@ function TimePickerSelection({
               backgroundColor: isDarkMode ? "#000" : "#d6d6d6",
               color: isDarkMode ? "#fe9f06" : "#262626",
             }}
-            className="react-ios-time-picker-btn react-ios-time-picker-btn-cancel"
+            className="react-wheel-time-picker-btn react-wheel-time-picker-btn-cancel"
             onClick={handleCancel}
           >
             {cancelButtonText}
@@ -127,7 +127,7 @@ function TimePickerSelection({
               background: isDarkMode ? "#000" : "#d6d6d6",
               color: isDarkMode ? "#fe9f06" : "#262626",
             }}
-            className="react-ios-time-picker-btn"
+            className="react-wheel-time-picker-btn"
             onClick={handleSave}
           >
             {saveButtonText}
@@ -135,14 +135,14 @@ function TimePickerSelection({
         </div>
       )}
       <div
-        className="react-ios-time-picker-container"
+        className="react-wheel-time-picker-container"
         style={{
           height: `${height * 5 + 70}px`,
           backgroundColor: isDarkMode ? "#1d1d1d" : "#f6f6f6f6",
         }}
       >
         <div
-          className="react-ios-time-picker-selected-overlay"
+          className="react-wheel-time-picker-selected-overlay"
           style={{
             top: `${height * 2 + 20}px`,
             height: `${height}px`,
@@ -152,7 +152,7 @@ function TimePickerSelection({
         <HourWheel {...params} />
         {seperator && (
           <div
-            className="react-ios-time-picker-colon"
+            className="react-wheel-time-picker-colon"
             style={{ color: isDarkMode ? "#f7f7f7" : "#000" }}
           >
             :

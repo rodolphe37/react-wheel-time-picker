@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import "../styles/react-ios-time-picker.css";
+import "../styles/react-wheel-time-picker.css";
 import TimePickerSelection from "./TimePickerSelection";
 import TimePickerWrapper from "./TimePickerWrapper";
 
@@ -97,7 +97,7 @@ function TimePicker({
   return (
     <>
       <div
-        className="react-ios-time-picker-main"
+        className="react-wheel-time-picker-main"
         style={{
           display: "flex",
           flexDirection: "column",
@@ -109,7 +109,7 @@ function TimePicker({
         <input
           id={id!}
           name={name!}
-          className={`react-ios-time-picker-input ${inputClassName || ""}`}
+          className={`react-wheel-time-picker-input ${inputClassName || ""}`}
           value={inputValue === null ? "" : inputValue}
           type="text"
           style={{
@@ -127,9 +127,9 @@ function TimePicker({
       {isOpen && !disabled && (
         <TimePickerWrapper isOpen={isOpen} isDarkMode={isDarkMode!}>
           <div>
-            <div className="react-ios-time-picker-popup">
+            <div className="react-wheel-time-picker-popup">
               <div
-                className={`react-ios-time-picker-popup-overlay ${
+                className={`react-wheel-time-picker-popup-overlay ${
                   popupClassName || ""
                 }`}
                 onClick={() => setIsOpen(!isOpen)}

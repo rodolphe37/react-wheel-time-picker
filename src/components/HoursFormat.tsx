@@ -229,7 +229,7 @@ function HourFormat({
 
   return (
     <div
-      className="react-ios-time-picker-hour-format"
+      className="react-wheel-time-picker-hour-format"
       onMouseDown={handleMouseDown}
       onMouseUp={handleMouseUp}
       onMouseMove={handleMouseMove}
@@ -244,7 +244,7 @@ function HourFormat({
       <div
         ref={mainListRef}
         className={`${
-          showFinalTranslate && "react-ios-time-picker-hour-format-transition"
+          showFinalTranslate && "react-wheel-time-picker-hour-format-transition"
         }`}
         onTransitionEnd={handleTransitionEnd}
         style={{ transform: `translateY(${currentTranslatedValue}px)` }}
@@ -252,14 +252,14 @@ function HourFormat({
         {hours.map((hourObj, index) => (
           <div
             key={index}
-            className="react-ios-time-picker-cell-hour"
+            className="react-wheel-time-picker-cell-hour"
             style={{ height: `${height}px` }}
           >
             <div
             style={hourObj.selected ? {color:  isDarkMode ? "#f7f7f7" : "#000"}:{}}
-              className={`react-ios-time-picker-cell-inner-hour-format${
+              className={`react-wheel-time-picker-cell-inner-hour-format${
                 hourObj.selected
-                  ? " react-ios-time-picker-cell-inner-hour-format-selected"
+                  ? " react-wheel-time-picker-cell-inner-hour-format-selected"
                   : ""
               }`}
               onClick={handleClickToSelect}

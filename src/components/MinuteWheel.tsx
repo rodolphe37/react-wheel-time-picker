@@ -219,7 +219,7 @@ function MinuteWheel({
 
   return (
     <div
-      className="react-ios-time-picker-minute"
+      className="react-wheel-time-picker-minute"
       onMouseDown={handleMouseDown}
       onMouseUp={handleMouseUp}
       onMouseMove={handleMouseMove}
@@ -234,8 +234,8 @@ function MinuteWheel({
       <div
         ref={mainListRef}
         className={`${
-          isFastCondition === true && "react-ios-time-picker-fast"
-        } ${isSlowCondition === true && "react-ios-time-picker-slow"}`}
+          isFastCondition === true && "react-wheel-time-picker-fast"
+        } ${isSlowCondition === true && "react-wheel-time-picker-slow"}`}
         onTransitionEnd={handleTransitionEnd}
         style={{ transform: `translateY(${currentTranslatedValue}px)` }}
       >
@@ -251,7 +251,7 @@ function MinuteWheel({
           ) => (
             <div
               key={index}
-              className="react-ios-time-picker-cell-minute"
+              className="react-wheel-time-picker-cell-minute"
               style={{ height: `${height}px` }}
             >
               <div
@@ -263,9 +263,9 @@ function MinuteWheel({
                     : "#6a6a6b",
                   fontSize: hourObj.selected ? 18 : 14,
                 }}
-                className={`react-ios-time-picker-cell-inner-minute${
+                className={`react-wheel-time-picker-cell-inner-minute${
                   hourObj.selected
-                    ? " react-ios-time-picker-cell-inner-selected"
+                    ? " react-wheel-time-picker-cell-inner-selected"
                     : ""
                 }`}
                 onClick={handleClickToSelect}

@@ -241,8 +241,8 @@ function HourWheel({
 
   return (
     <div
-      className={`react-ios-time-picker-hour ${
-        use12Hours && "react-ios-time-picker-hour-12hour-format"
+      className={`react-wheel-time-picker-hour ${
+        use12Hours && "react-wheel-time-picker-hour-12hour-format"
       }`}
       onMouseDown={(e) => handleMouseDown(e)}
       onMouseUp={handleMouseUp}
@@ -258,15 +258,15 @@ function HourWheel({
       <div
         ref={mainListRef!}
         className={`${
-          isFastCondition === true && "react-ios-time-picker-fast"
-        } ${isSlowCondition === true && "react-ios-time-picker-slow"}`}
+          isFastCondition === true && "react-wheel-time-picker-fast"
+        } ${isSlowCondition === true && "react-wheel-time-picker-slow"}`}
         onTransitionEnd={handleTransitionEnd}
         style={{ transform: `translateY(${currentTranslatedValue}px)` }}
       >
         {hours.map((hourObj, index) => (
           <div
             key={index}
-            className="react-ios-time-picker-cell-hour"
+            className="react-wheel-time-picker-cell-hour"
             style={{ height: `${height}px` }}
           >
             <div
@@ -278,13 +278,13 @@ function HourWheel({
                   : "#6a6a6b",
                 fontSize: hourObj.selected ? 18 : 14,
               }}
-              className={`react-ios-time-picker-cell-inner-hour${
+              className={`react-wheel-time-picker-cell-inner-hour${
                 hourObj.selected
-                  ? " react-ios-time-picker-cell-inner-selected"
+                  ? " react-wheel-time-picker-cell-inner-selected"
                   : ""
               }${
                 hourObj?.hidden
-                  ? " react-ios-time-picker-cell-inner-hidden"
+                  ? " react-wheel-time-picker-cell-inner-hidden"
                   : ""
               }`}
               onClick={handleClickToSelect}

@@ -1,11 +1,12 @@
 import resolve from '@rollup/plugin-node-resolve';
+import css from "rollup-plugin-import-css";
 import commonjs from '@rollup/plugin-commonjs';
 import typescript from '@rollup/plugin-typescript';
 import { terser } from 'rollup-plugin-terser';
 import peerDepsExternal from 'rollup-plugin-peer-deps-external';
 
 export default {
-    input: 'src/MyComponent.tsx',
+    input: 'src/index.tsx',
     output: [
         {
             file: 'dist/bundle.cjs.js',
@@ -24,7 +25,8 @@ export default {
         resolve(),
         commonjs(),
         typescript({ tsconfig: './tsconfig.json' }),
-        terser()
+        terser(),
+        css()
     ],
     external: ['react', 'react-dom', 'react-player']  // Ensure these are not bundled
 };
