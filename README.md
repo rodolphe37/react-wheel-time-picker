@@ -4,7 +4,6 @@
 
 ![React-wheel-time-picker demo](demo/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f656d6470726f2f696d6167652f75706c6f61642f76313636313234353234392f64656d6f5f62636d7a6d652e676966.gif)
 
->This package is inspired by an old javascript package (with a few bugs, probably due to the age of the package or incorrect implementation at the outset). [React ios time picker](https://github.com/MEddarhri/react-ios-time-picker)
 
 A modern wheel time picker for your React app.
 
