@@ -137,7 +137,7 @@ function TimePickerSelection({
       <div
         className="react-wheel-time-picker-container"
         style={{
-          height: `${height * 5 + 70}px`,
+          height: `${height * 5 }px`,
           backgroundColor: isDarkMode ? "#1d1d1d" : "#f6f6f6f6",
         }}
       >
