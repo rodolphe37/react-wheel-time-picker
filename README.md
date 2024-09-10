@@ -86,8 +86,8 @@ export default const  MyApp = () => {
             use12Hours
             label="Start time"
             isDarkMode={isDarkMode}
-            onChange={onChangehours}
-            value={hourValue}
+            onChange={onChange}
+            value={value}
         />
       </div>
    );
