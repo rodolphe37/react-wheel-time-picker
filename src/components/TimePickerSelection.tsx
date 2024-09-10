@@ -73,7 +73,6 @@ function TimePickerSelection({
     }
   }, [hourFormat, onAmPmChange]);
 
-  console.log("hourFormat.hourFormat", hourFormat);
 
   const params = {
     height,
