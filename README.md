@@ -12,6 +12,10 @@ A modern wheel time picker for your React app.
 - No moment.js needed
 - Zero dependencies and lightweight
 
+### Live demo
+>To see the live demo:
+>[Click here](https://joyful-bonbon-a01897.netlify.app/)
+
 ## install
 
 ```
