@@ -6,7 +6,6 @@
   "scripts": {
     "build": "rollup -c",
     "test": "jest",
-    "start": "react-scripts start",
     "prepare": "npm run build"
   },
   "repository": {
@@ -45,7 +44,6 @@
     "react-dom": "^18.3.1"
   },
   "dependencies": {
-    "react-scripts": "^5.0.1",
     "rollup-plugin-import-css": "^3.5.1"
   }
 }
