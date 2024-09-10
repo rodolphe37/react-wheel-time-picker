@@ -118,4 +118,4 @@ git clone https://github.com/rodolphe37/react-wheel-time-picker
 
 ## License
 
-The MIT License.
+The ISC License.
