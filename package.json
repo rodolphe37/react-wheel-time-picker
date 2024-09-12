@@ -1,6 +1,6 @@
 {
   "name": "react-wheel-time-picker",
-  "version": "1.2.8",
+  "version": "1.2.9",
   "main": "dist/bundle.cjs.js",
   "module": "dist/bundle.esm.js",
   "type": "module",
@@ -20,7 +20,7 @@
     "wheel"
   ],
   "author": "rodolphe Augusto",
-  "license": "MIT",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/rodolphe37/react-wheel-time-picker/issues"
   },

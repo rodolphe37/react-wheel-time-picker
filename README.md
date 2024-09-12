@@ -4,7 +4,6 @@
 
 ![React-wheel-time-picker demo](demo/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f656d6470726f2f696d6167652f75706c6f61642f76313636313234353234392f64656d6f5f62636d7a6d652e676966.gif)
 
-
 A modern wheel time picker for your React app.
 
 - Full Typescript support
@@ -13,15 +12,18 @@ A modern wheel time picker for your React app.
 - Zero dependencies and lightweight
 
 ### Live demo
->To see the live demo:
->[Click here](https://joyful-bonbon-a01897.netlify.app/)
+
+> To see the live demo:
+> [Click here](https://joyful-bonbon-a01897.netlify.app/)
 
 ## install
 
 ```
 npm install react-wheel-time-picker
 ```
-or 
+
+or
+
 ```
 yarn add react-wheel-time-picker
 ```
@@ -29,7 +31,8 @@ yarn add react-wheel-time-picker
 ### d.ts declaration
 
 If you have a vite-env.d.ts or other d.ts file in your src folder you can put this
->`declare module 'react-wheel-time-picker'`
+
+> `declare module 'react-wheel-time-picker'`
 
 It's for finding corresponding type of 'react-wheel-time-picker'.
 
@@ -96,29 +99,31 @@ export default const  MyApp = () => {
 
 ## API
 
-| Name               | Type                                          | Default        | Description                                                     |
-| ------------------ | --------------------------------------------- | -------------- | --------------------------------------------------------------- |
-| value              | String                                        | n/a            | Current value.                                                  |
-| cellHeight         | Number                                        | 28             | The height of the cell number.                                  |
-| placeHolder        | String                                        | `"Selet_time"` | Time input's placeholder.                                       |
-| pickerDefaultValue | String                                        | `"00:00"`      | The initial value that the picker begin with in the first time. |
-| disabled           | Boolean                                       | `false`        | Whether picker is disabled.                                     |
-| isOpen             | Boolean                                       | `false`        | Whether the time picker should be opened.                       |
-| required           | Boolean                                       | `false`        | Whether time input should be required.                          |
-| cancelButtonText   | String                                        | `"Cancel"`     | Cancel button text content                                      |
-| saveButtonText     | String                                        | `"Save"`       | Save button text content                                        |
-| controllers        | Boolean                                       | `true`         | Whether the buttons should be displayed                         |
-| seperator          | Boolean                                       | `true`         | whether show the colon seperator                                |
-| id                 | String                                        | n/a            | Input time picker id                                            |
-| name               | String                                        | n/a            | Input time picker name                                          |
-| use12Hours         | Boolean                                       | false          | 12 hours display mode                                           |
-| inputClassName     | String                                        | n/a            | Input time picker className                                     |
-| popupClassName     | String                                        | n/a            | time picker popup className                                     |
-| onChange           | `(value) => alert ('New time is: ', value)`   | n/a            | Called when select a different value                            |
-| onSave             | `(value) => alert ('Time saved is: ', value)` | n/a            | When the user clicks on save button                             |
-| onClose            | `() => alert('Clock closed')`                 | n/a            | When the user clicks on cancel button                           |
-| onAmPmChange       | `(value) => alert('Am/Pm changed : value')`   | n/a            | called when select an am/pm value                               |
-| onOpen             | `() => alert('time picker opened')`           | n/a            | called when time picker is opened                               |
+| Name               | Type                                                     | Default        | Description                                                     |
+| ------------------ | -------------------------------------------------------- | -------------- | --------------------------------------------------------------- |
+| label              | String (optional)                                        | n/a            | Name of the input.                                              |
+| isDarkMode         | Boolean (optional)                                       | n/a            | for dark mode support.                                          |
+| value              | String                                                   | n/a            | Current value.                                                  |
+| cellHeight         | Number (optional)                                        | 28             | The height of the cell number.                                  |
+| placeHolder        | String (optional)                                        | `"Selet_time"` | Time input's placeholder.                                       |
+| pickerDefaultValue | String (optional)                                        | `"00:00"`      | The initial value that the picker begin with in the first time. |
+| disabled           | Boolean (optional)                                       | `false`        | Whether picker is disabled.                                     |
+| isOpen             | Boolean (optional)                                       | `false`        | Whether the time picker should be opened.                       |
+| required           | Boolean (optional)                                       | `false`        | Whether time input should be required.                          |
+| cancelButtonText   | String (optional)                                        | `"Cancel"`     | Cancel button text content                                      |
+| saveButtonText     | String (optional)                                        | `"Save"`       | Save button text content                                        |
+| controllers        | Boolean (optional)                                       | `true`         | Whether the buttons should be displayed                         |
+| seperator          | Boolean (optional)                                       | `true`         | whether show the colon seperator                                |
+| id                 | String (optional)                                        | n/a            | Input time picker id                                            |
+| name               | String (optional)                                        | n/a            | Input time picker name                                          |
+| use12Hours         | Boolean (optional)                                       | false          | 12 hours display mode                                           |
+| inputClassName     | String (optional)                                        | n/a            | Input time picker className                                     |
+| popupClassName     | String (optional)                                        | n/a            | time picker popup className                                     |
+| onChange           | `(value) => alert ('New time is: ', value)`              | n/a            | Called when select a different value                            |
+| onSave             | `(value) => alert ('Time saved is: ', value)` (optional) | n/a            | When the user clicks on save button                             |
+| onClose            | `() => alert('Clock closed')` (optional)                 | n/a            | When the user clicks on cancel button                           |
+| onAmPmChange       | `(value) => alert('Am/Pm changed : value')` (optional)   | n/a            | called when select an am/pm value                               |
+| onOpen             | `() => alert('time picker opened')` (optional)           | n/a            | called when time picker is opened                               |
 
 ## Contributions Welcome!
 
