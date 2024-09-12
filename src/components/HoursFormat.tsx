@@ -58,7 +58,7 @@ function HourFormat({
   const [cursorPosition, setCursorPosition] = useState<number>(0);
   const [firstCursorPosition, setFirstCursorPosition] = useState<number>(0);
   const [currentTranslatedValue, setCurrentTranslatedValue] = useState(
-    parseInt(hours.filter((item) => item.selected === true)[0]?.translatedValue)
+    parseInt(hours.filter((item) => item.selected === true)[0]?.translatedValue ?? "00:00")
   );
   const [startCapture, setStartCapture] = useState(false);
   const [showFinalTranslate, setShowFinalTranslate] = useState(false);
